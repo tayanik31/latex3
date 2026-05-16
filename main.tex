@@ -1,0 +1,77 @@
+\documentclass[coursework]{SCWorks}
+
+% Подключаем русский язык (ВАЖНО!)
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[hidelinks]{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,    # ссылки в оглавлении будут чёрными (не синими)
+    citecolor=black,
+    urlcolor=blue
+}
+
+% Данные о работе
+\title{Анализ и сравнение алгоритмов сортировки}
+\author{Захарова Таисия Ивановна}
+\course{2}
+\group{251}
+\napravlenie{09.03.04 --- Программная инженерия}
+\chair{математической кибернетики и компьютерных наук}
+\satitle{к.ф.-м.н., доцент}
+\saname{Г.Г. Наркайтис}
+\chtitle{д.ф.-м.н., профессор}
+\chname{С.В. Миронов}
+\date{2024}
+\department{факультета компьютерных наук и информационных технологий}
+\spectype{бакалавриат}
+\spectyperod{бакалавриата}
+\workform{курсовой работы}
+\otdelenie{очное}
+
+\secNumbering
+\graphicspath{{images/}}
+\begin{document}
+
+% ТИТУЛЬНЫЙ ЛИСТ
+\begin{titlepage}
+\centering
+\vspace*{1cm}
+{\Large \textbf{МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РФ}} \\[0.3cm]
+{\large \textbf{САРАТОВСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ}} \\[0.2cm]
+{\large \textbf{имени Н.Г. ЧЕРНЫШЕВСКОГО}} \\[1cm]
+{\large Факультет компьютерных наук и информационных технологий} \\[2cm]
+{\Large \textbf{ОТЧЁТНАЯ РАБОТА}} \\[0.8cm]
+{\huge \textbf{Анализ и сравнение алгоритмов сортировки}} \\[3cm]
+\begin{flushright}
+\textbf{Выполнила:} \\
+студентка 1 курса группы 151 \\
+Захарова Т.И. \\[0.8cm]
+\textbf{Научный руководитель:} \\
+к.ф.-м.н., доцент \\
+Наркайтис Г.Г.
+\end{flushright}
+\vfill
+\centering
+Саратов 2026
+\end{titlepage}
+
+% ОГЛАВЛЕНИЕ
+\renewcommand{\contentsname}{Содержание}
+\tableofcontents
+\newpage
+
+% ПОДКЛЮЧАЕМ ФАЙЛЫ
+\input{chapters/introduction}
+\input{chapters/theory}
+\input{chapters/algorithms}
+\input{chapters/results}
+\input{chapters/conclusion}
+
+% СПИСОК ЛИТЕРАТУРЫ
+\bibliographystyle{unsrt}
+\bibliography{bibliography}
+
+\end{document}
